@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html,body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #764B4D;
+}
+
+.navbar
+{
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    background-color: rgba(217, 217, 217, 0.19);
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+}
+.nav
+{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.nav a
+{
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 0.3s;
+}
+#Home:hover
+{
+    text-decoration: underline pink;
+    scale: 1.1;
+}
+#Customer:hover
+{
+    text-decoration: underline pink;
+    scale: 1.1;
+}
+#Man:hover
+{
+    text-decoration: underline pink;
+    scale: 1.1;
+}
+#Sale:hover
+{
+    text-decoration: underline pink;
+    scale: 1.1;
+}
+
+.main
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 5% 20% 50% 20% 5%;
+    /* background-color: red; */
+}
+.left
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: orange;
+}
+.left img
+{
+    width: 40%;
+    height: 45px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.left img:hover
+{
+    scale: 1.2;
+    width: 40%;
+    height: 45px;
+    cursor: pointer;
+}
+.right 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: orange;
+}
+.right img
+{
+    cursor: pointer;
+    width: 40%;
+    rotate: 180deg;
+    height: 45px;
+    transition: 0.3s;
+}
+.right img:hover
+{
+    scale: 1.2;
+    cursor: pointer;
+    width: 40%;
+    rotate: 180deg;
+    height: 45px;
+}
+.imageShoes
+{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: shoesMove;
+    animation-duration: 2s; 
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.771));
+}
+.img_shoes
+{
+    position: absolute;
+}
+@keyframes shoesMove
+{
+    0%{
+        margin-top: 400px;
+        filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0));
+        transform: rotate(20deg);
+    }
+    100%{
+        margin-top: 0%;
+        filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.771));
+    }
+
+}
+
+
+.imageShoes
+{
+}
+
+.img_shoes
+{
+    width: 70%;
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.747));
+    display: flex;
+    filter: opacity(1);
+    visibility: hidden;
+}
+.Home
+{
+    
+}

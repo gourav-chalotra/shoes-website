@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav">
+            <a href="#" id="Home">Home</a>
+            <a href="#" id="Customer">Customer</a>
+            <a href="#" id="Man">Man</a>
+            <a href="#" id="Sale">Sale</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="left">
+            <img id="left_arrow" src="./assits/chevron-left.svg" alt="">
+        </div>
+        <div class="info">
+
+        </div>
+        <div class="shoes">
+            <div class="imageShoes">
+                <img class="img_shoes" src="./assits/Shoes2-PhotoRoom.png-PhotoRoom.png" alt="">
+                <img class="img_shoes" src="./assits/shoes-PhotoRoom.png-PhotoRoom.png" alt="">
+                <img class="img_shoes" src="./assits/Shoes4-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="info"></div>
+        <div class="right">
+            <img id="right_arrow" src="./assits/chevron-left.svg" alt="">
+        </div>
+    </div>
+
+    <script>
+        var visibleSport = 0;
+        let shoes_images = document.getElementsByClassName("img_shoes");
+        shoes_images[visibleSport].style.visibility = "visible"
+
+        document.getElementById("left_arrow").addEventListener("click",()=>{
+            shoes_images[visibleSport].style.visibility = "hidden"
+            visibleSport--;
+            if(visibleSport < 0)
+            {
+                visibleSport = shoes_images.length-1;
+            }
+            visible();
+            console.log(visibleSport);
+        })
+        document.getElementById("right_arrow").addEventListener("click",()=>{
+            shoes_images[visibleSport].style.visibility = "hidden"
+            visibleSport++;
+            if(visibleSport >= shoes_images.length)
+            {
+                visibleSport = 0;
+            }
+            visible();
+            console.log(visibleSport);
+        })
+        function visible()
+        {
+            shoes_images[visibleSport];
+            shoes_images[visibleSport].style.visibility = "visible"
+            
+            
+        };
+        document.addEventListener("ArrowLeft",()=>{
+            alert("working");
+        })
+    </script>
+</body>
+
+</html>
